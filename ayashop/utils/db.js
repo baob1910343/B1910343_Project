@@ -3,13 +3,13 @@ const connection = {};
 
 async function connectDb() {
   if (connection.isConnected) {
-    console.log("Already connected to the database.");
+    console.log("Đã kết nối với cơ sở dữ liệu");
     return;
   }
   if (mongoose.connections.length > 0) {
     connection.isConnected = mongoose.connections[0].readyState;
     if (connection.isConnected === 1) {
-      console.log("Use previous connection to the database.");
+      console.log("Sử dụng kết nối trước đó với cơ sở dữ liệu.");
       return;
     }
     await mongoose.disconnect();
@@ -18,7 +18,7 @@ async function connectDb() {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
-  console.log("New connection to the database.");
+  console.log("Kết nối mới tới cơ sở dữ liệu.");
   connection.isConnected = db.connections[0].readyState;
 }
 
@@ -28,7 +28,7 @@ async function disconnectDb() {
       await mongoose.disconnect();
       connection.isConnected = false;
     } else {
-      console.log("not diconnecting from the database.");
+      console.log("không ngắt kết nối với cơ sở dữ liệu.");
     }
   }
 }
