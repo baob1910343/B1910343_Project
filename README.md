@@ -1,2 +1,0 @@
-# B1910343_Project
-B1910343_LamQuocBao_LuanVan
