@@ -1,15 +1,19 @@
-import React from 'react'
+import React from "react";
 
 export default function Inputsearch() {
   return (
-    <div><div class="input-group">
-    <div class="form-outline">
-      <input type="search" id="form1" class="form-control" />
-      <label class="form-label" for="form1">Search</label>
+    <div>
+      <div className="input-group">
+        <div className="form-outline">
+          <input type="search" id="form1" className="form-control" />
+          <label className="form-label" for="form1">
+            Search
+          </label>
+        </div>
+        <button type="button" className="btn btn-primary">
+          <i className="fas fa-search"></i>
+        </button>
+      </div>
     </div>
-    <button type="button" class="btn btn-primary">
-      <i class="fas fa-search"></i>
-    </button>
-  </div></div>
-  )
+  );
 }

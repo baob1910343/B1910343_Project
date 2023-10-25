@@ -1,37 +1,40 @@
 import Link from "next/link";
 import styles from "./styles.module.scss";
-import Image from "next/image";
-import { SearchOutlined } from "@ant-design/icons";
+import { SearchOutlined, ShoppingCartOutlined } from "@ant-design/icons";
+import { useSelector } from "react-redux";
 export default function Main() {
+  const { cart } = useSelector((state) => ({ ...state }));
+
   return (
-    <div className="row">
+    <div className="row ">
       <div className="col-md-2 mt-2">
         <Link href="/">
-          <img
-            src="https://o.remove.bg/downloads/7bde485a-2ff5-4a06-9deb-f4d5ce657f6b/logo-removebg-preview.png"
-            alt=""
-            width={170}
-            height={51.23}
-          />
+          <img src="../../../logo.png" alt="" width={170} height={51.23} />
         </Link>
       </div>
-      <div className="col-md-10 mt-3">
-        <div className="row">
-          <div className=" input-group">
-            <div className="form-outline col-md-8">
+      <div className="col-md-8 mt-3">
+        <div className="row d-flex ">
+          <div className="col input-group ">
+            <div className="form-outline col-md">
               <input
                 type="search"
                 id="form1"
                 className="form-control"
-                placeholder="Search"
+                placeholder="Tìm kiếm"
                 aria-label="Search"
               />
             </div>
-            <button type="button" className="btn btn-primary col-md-1 ">
-              <i className="">
-                <SearchOutlined />
+            <button type="button" className="btn btn-primary  ">
+              <i>
+                <SearchOutlined style={{ fontSize: "22px" }} />
               </i>
             </button>
+          </div>
+          <div className="col-md-1 ">
+            <Link href="/cart">
+              <ShoppingCartOutlined style={{ fontSize: "37px" }} />
+              <span className="position-absolute ">0</span>
+            </Link>
           </div>
         </div>
       </div>
