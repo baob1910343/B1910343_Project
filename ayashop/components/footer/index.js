@@ -4,7 +4,7 @@ import NewsLetter from "./NewsLetter";
 import Payment from "./Payment";
 import Copyright from "./Copyright";
 
-export default function Footer() {
+export default function Footer({ country }) {
   return (
     <footer className="container">
       <div>
@@ -12,7 +12,7 @@ export default function Footer() {
         <Social />
         <NewsLetter />
         <Payment />
-        <Copyright />
+        <Copyright country={country} />
       </div>
     </footer>
   );

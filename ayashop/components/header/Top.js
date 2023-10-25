@@ -8,7 +8,7 @@ import UserMenu from "../header/UserMenu";
 import Main from "./Main";
 import Image from "next/image";
 
-export default function Top() {
+export default function Top({ country }) {
   const [loggedIn, setLoggedIn] = useState(true);
   const [visible, setVisible] = useState(false);
   //   const Click_user = () => {
@@ -22,7 +22,16 @@ export default function Top() {
       <div className=" mt-2  row">
         <div className=" ">
           <ul className="list-inline d-flex justify-content-end text-decoration-none  ">
-            <li className="mr-1 btn ">VietNam / VND</li>
+            <li className="mr-1 btn ">
+              <img
+                className="rounded-circle col"
+                src={country.flag}
+                alt=""
+                width="25"
+                height=""
+              />
+              {country.name} / VND
+            </li>
             <li className="mr-1 btn  ">
               <MdOutlineSecurity />
               Bảo vệ người mua
