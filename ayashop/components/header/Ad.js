@@ -4,7 +4,7 @@ export default function Ad() {
   return (
     <div className="row ">
       <Link href="/browse">
-        <div className={styles.ad}> header</div>
+        <div className={styles.ad}> </div>
       </Link>
     </div>
   );

@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 export default function UserMenu({ loggedIn }) {
   return (
     <div className={styles.mtop}>
-      <div className=" bg-light  rounded border  ">
+      <div className=" bg-white  rounded border  ">
         <div className="col-md-12 text-center">
           <h4>Chào mừng đến AyaShop !</h4>
         </div>
