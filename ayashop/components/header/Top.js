@@ -7,9 +7,10 @@ import { useState } from "react";
 import UserMenu from "../header/UserMenu";
 import Main from "./Main";
 import Image from "next/image";
-
+import { useSession } from "next-auth/react";
 export default function Top({ country }) {
-  const [loggedIn, setLoggedIn] = useState(true);
+  const { data: session } = useSession();
+
   const [visible, setVisible] = useState(false);
   //   const Click_user = () => {
   //     setVisible(!visible);
@@ -53,16 +54,16 @@ export default function Top({ country }) {
               onMouseOver={() => setVisible(true)}
               onMouseLeave={() => setVisible(false)}
             >
-              {loggedIn ? (
+              {session ? (
                 <li className="mr-1 btn ">
                   <img
                     className="rounded-circle "
-                    src="https://pbs.twimg.com/media/E9cPqPQXEAEYGoN.png"
+                    src={session.user.image}
                     alt=""
                     width="40"
                     height="40"
                   />
-                  admin
+                  <span>{session.user.name}</span>
                   <RiArrowDropDownFill />
                 </li>
               ) : (
@@ -74,7 +75,7 @@ export default function Top({ country }) {
               )}
               <li className="">
                 <div className="  flex-row-reverse    ">
-                  {visible && <UserMenu loggedIn={loggedIn} />}
+                  {visible && <UserMenu session={session} />}
                 </div>
               </li>
             </li>
