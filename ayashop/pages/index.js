@@ -4,11 +4,12 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import axios from "axios";
 import { useSession, signIn, signOut } from "next-auth/react";
+import DotLoaderSpinner from "../components/loaders/dotLoader";
 
 export default function Home({ country }) {
   const { data: session } = useSession();
   console.log(session);
-
+  // {loading && <DotLoaderSpinner loading={loading} />}
   return (
     <div className="container">
       <Header country={country} />

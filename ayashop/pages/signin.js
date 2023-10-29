@@ -8,6 +8,8 @@ import { useState } from "react";
 import * as Yup from "yup";
 import { getProviders, signIn } from "next-auth/react";
 import axios from "axios";
+import DotLoaderSpinner from "../components/loaders/dotLoader";
+import Router from "next/router";
 
 const initialvalues = {
   login_email: "",
@@ -18,6 +20,7 @@ const initialvalues = {
   conf_password: "",
   success: "",
   error: "",
+  login_error: "",
 };
 
 export default function signin({ providers }) {
@@ -32,6 +35,7 @@ export default function signin({ providers }) {
     conf_password,
     success,
     error,
+    login_error,
   } = user;
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -73,14 +77,44 @@ export default function signin({ providers }) {
       setUser({ ...user, error: "", success: data.message });
       // neu co loi tb
       setLoading(false);
+      setTimeout(async () => {
+        let options = {
+          redirect: false, //de ko tu dong chuyen huong sang trang home
+          email: email, // phai dang nhap = email
+          password: password,
+        };
+        const res = await signIn("credentials", options); // sao khi dang ky xog se tu dong dang nhap
+
+        Router.push("/");
+      }, 500); // sau khi dang ky 1s sau chuyen trang home
     } catch (error) {
       setLoading(false);
       setUser({ ...user, success: "", error: error.response.data.message });
     }
   };
+  const signInHandler = async () => {
+    setLoading(true);
+    let options = {
+      redirect: false, //de ko tu dong chuyen huong sang trang home
+      email: login_email, // phai dang nhap = email
+      password: login_password,
+    };
+    const res = await signIn("credentials", options); //sau khi dang nhap chuc nang nay se xuat hien
+    setUser({ ...user, success: "", error: "" }); // thiet lap user khi dang nhap thanh cong khi loi se xh mau
+    setLoading(false);
+    if (res?.error) {
+      setLoading(false);
+      setUser({ ...user, login_error: res?.error });
+    } else {
+      return Router.push("/");
+    }
+  };
   return (
     <div className="container">
       <Header country="" />
+
+      {loading && <DotLoaderSpinner loading={loading} />}
+
       <div>
         <div className="row pt-5">
           <div className="text-center">
@@ -105,6 +139,9 @@ export default function signin({ providers }) {
                 login_password,
               }}
               validationSchema={loginValidation}
+              onSubmit={() => {
+                signInHandler();
+              }}
             >
               {(form) => (
                 <Form>
@@ -124,9 +161,15 @@ export default function signin({ providers }) {
                     className=""
                     onChange={handleChange}
                   />
-                  <div className="btn btn-primary rounded-pill fs-4">
+                  <button
+                    type="submit"
+                    className="btn btn-primary rounded-pill fs-4"
+                  >
                     Đăng nhập
-                  </div>
+                  </button>
+                  {login_error && (
+                    <span className="text-danger">{login_error}</span>
+                  )}
                   <div className="">
                     <Link href="/forget" className="text-decoration-none">
                       Quên mật khẩu
@@ -135,6 +178,7 @@ export default function signin({ providers }) {
                 </Form>
               )}
             </Formik>
+
             <div>
               <div className=" ">Hoặc tiếp tục với</div>
               <div className="col-md-2 text-center">
@@ -208,13 +252,15 @@ export default function signin({ providers }) {
                     type="submit"
                     className="btn btn-primary rounded-pill fs-4"
                   >
-                    Đăng nhập
+                    Đăng ký
                   </button>
                 </Form>
               )}
             </Formik>
-            <div>{success && <span> {success}</span>}</div>
-            <div>{error && <span> {error}</span>}</div>
+            <div className="text-success">
+              {success && <span> {success}</span>}
+            </div>
+            <div className="text-danger">{error && <span> {error}</span>}</div>
           </div>
         </div>
       </div>
