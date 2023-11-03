@@ -5,6 +5,7 @@ import Footer from "../components/footer";
 import axios from "axios";
 import { useSession, signIn, signOut } from "next-auth/react";
 import DotLoaderSpinner from "../components/loaders/dotLoader";
+import Main from "../components/home/main";
 
 export default function Home({ country }) {
   const { data: session } = useSession();
@@ -13,6 +14,11 @@ export default function Home({ country }) {
   return (
     <div className="container">
       <Header country={country} />
+      <div className="container">
+        <div className="row">
+          <Main />
+        </div>
+      </div>
       <Footer country={country} />
     </div>
   );
