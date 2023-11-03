@@ -4,6 +4,7 @@ export const createActivationToken = (payload) => {
     expiresIn: "2d", //han sd 2day
   });
 };
+// tao ma reset dann sd 6h
 export const createResetToken = (payload) => {
   return jwt.sign(payload, process.env.RESET_TOKEN_SECRET, {
     expiresIn: "6h",

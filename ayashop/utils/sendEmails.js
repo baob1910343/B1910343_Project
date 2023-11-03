@@ -17,7 +17,7 @@ const oauth2Client = new OAuth2(
   MAILING_SERVICE_REFRESH_TOKEN,
   OAUTH_PLAYGROUND
 ); //gửi email
-export const sendEmail = (to, url, txt, subject) => {
+export const sendEmail = (to, url, txt, subject, template) => {
   oauth2Client.setCredentials({
     refresh_token: MAILING_SERVICE_REFRESH_TOKEN,
   });
@@ -37,7 +37,7 @@ export const sendEmail = (to, url, txt, subject) => {
     from: SENDER_EMAIL_ADDRESS, //
     to: to, // gui van ban toi
     subject: subject, //truyen chu de
-    html: activateEmailTemplate(to, url),
+    html: template(to, url),
   };
   smtpTransport.sendMail(mailOptions, (err, infos) => {
     if (err) return err;

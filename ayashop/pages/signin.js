@@ -6,7 +6,12 @@ import { Formik, Form } from "formik";
 import LoginInput from "../components/inputs/loginInput";
 import { useState } from "react";
 import * as Yup from "yup";
-import { getProviders, signIn } from "next-auth/react";
+import {
+  getCsrfToken,
+  getProviders,
+  getSession,
+  signIn,
+} from "next-auth/react";
 import axios from "axios";
 import DotLoaderSpinner from "../components/loaders/dotLoader";
 import Router from "next/router";
@@ -23,7 +28,7 @@ const initialvalues = {
   login_error: "",
 };
 
-export default function signin({ providers }) {
+export default function signin({ providers, callbackUrl, csrfToken }) {
   const [loading, setLoading] = useState(false);
   const [user, setUser] = useState(initialvalues);
   const {
@@ -66,6 +71,7 @@ export default function signin({ providers }) {
       .required("Xác nhận lại mật khẩu của bạn.")
       .oneOf([Yup.ref("password")], "Mật khẩu phải trùng khớp đã nhập."),
   });
+  // mat khau va xac nhan mat khau
   const signUpHandler = async () => {
     try {
       setLoading(true);
@@ -106,7 +112,8 @@ export default function signin({ providers }) {
       setLoading(false);
       setUser({ ...user, login_error: res?.error });
     } else {
-      return Router.push("/");
+      return Router.push(callbackUrl || "/"); //chuyển hướng đến một URL cụ thể
+      // hoac no ko ton tai chuyen ra home
     }
   };
   return (
@@ -144,7 +151,13 @@ export default function signin({ providers }) {
               }}
             >
               {(form) => (
-                <Form>
+                <Form method="post" action="/api/auth/signin/email">
+                  <input
+                    type="hidden"
+                    name="csrfToken"
+                    defaultValue={csrfToken}
+                  />
+
                   <LoginInput
                     type="text"
                     name="login_email"
@@ -171,7 +184,7 @@ export default function signin({ providers }) {
                     <span className="text-danger">{login_error}</span>
                   )}
                   <div className="">
-                    <Link href="/forget" className="text-decoration-none">
+                    <Link href="/auth/forgot" className="text-decoration-none">
                       Quên mật khẩu
                     </Link>
                   </div>
@@ -182,16 +195,22 @@ export default function signin({ providers }) {
             <div>
               <div className=" ">Hoặc tiếp tục với</div>
               <div className="col-md-2 text-center">
-                {providers.map((provider) => (
-                  <div
-                    key={provider.name}
-                    className="btn row btn-light mt-2"
-                    onClick={() => signIn(provider.id)}
-                  >
-                    <img src={`../../icons/${provider.name}.png`} alt="" />
-                    Dang nhap voi {provider.name}
-                  </div>
-                ))}
+                {providers.map((provider) => {
+                  if (provider.name == "Credentials") {
+                    // neu ten nha cug cap = nhau thi tt xac thuc bang nhau
+                    return;
+                  }
+                  return (
+                    <div
+                      key={provider.name}
+                      className="btn row btn-light mt-2"
+                      onClick={() => signIn(provider.id)}
+                    >
+                      <img src={`../../icons/${provider.name}.png`} alt="" />
+                      Dang nhap voi {provider.name}
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -269,25 +288,28 @@ export default function signin({ providers }) {
   );
 }
 export async function getServerSideProps(context) {
-  // const { req, query } = context;({ req });
+  const { req, query } = context;
+  // ({ req }); // trich xuat cac yeu cau truy van
+  // co the nhan bat ky truy van nao tu giao dien
+  const session = await getSession({ req });
 
+  const { callbackUrl } = query;
+
+  if (session) {
+    return {
+      redirect: {
+        destination: callbackUrl,
+      },
+    };
+  }
+  const csrfToken = await getCsrfToken(context);
   const providers = Object.values(await getProviders());
-  // const { callbackUrl } = query;
 
-  // if (session) {
-  //   return {
-  //     redirect: {
-  //       destination: callbackUrl,
-  //     },
-  //   };
-  // }
-  // const csrfToken = await getCsrfToken(context);
-  // const providers = Object.values(await getProviders());
   return {
     props: {
       providers,
-      // csrfToken,
-      // callbackUrl,
+      csrfToken,
+      callbackUrl,
     },
   };
 }

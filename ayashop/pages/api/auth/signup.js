@@ -42,7 +42,8 @@ handler.post(async (req, res) => {
       email,
       url,
       "",
-      "kích hoạt tài khoản của bạn."
+      "kích hoạt tài khoản của bạn.",
+      activateEmailTemplate
       // activateEmailTemplate
     ); // khi usr truy cap wweb co thong
     // bao kich hoat tu url do va lay id nguoi dung email xac minh trog csdl

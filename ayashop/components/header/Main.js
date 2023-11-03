@@ -7,12 +7,12 @@ export default function Main() {
 
   return (
     <div className="row ">
-      <div className="col-md-2 mt-2">
+      <div className="col-md-3 mt-2">
         <Link href="/">
           <img src="../../../logo.png" alt="" width={170} height={51.23} />
         </Link>
       </div>
-      <div className="col-md-8 mt-3">
+      <div className="col-md-7 mt-3">
         <div className="row d-flex ">
           <div className="col input-group ">
             <div className="form-outline col-md">
