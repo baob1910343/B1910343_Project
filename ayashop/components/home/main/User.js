@@ -69,12 +69,12 @@ export default function User() {
           grabCursor={true}
           navigation={true}
           modules={[EffectCards, Navigation]}
-          className="userMenu"
+          className="userMenu "
         >
           {userSwiperArray.map((item) => (
             <SwiperSlide>
               <Link href="">
-                <img src={item.image} alt="" width={200} height={200} />
+                <img src={item.image} alt="" className="img-fluid" />
               </Link>
             </SwiperSlide>
           ))}

@@ -142,3 +142,69 @@ export const userSwiperArray = [
     link: "",
   },
 ];
+export const flashDealsArray = [
+  {
+    image:
+      "https://staticg.sportskeeda.com/editor/2022/12/afd6e-16709458041236-1920.jpg",
+    price: "100",
+    discount: "11",
+    link: "",
+    sold: "30",
+  },
+  {
+    image:
+      "https://staticg.sportskeeda.com/editor/2022/12/afd6e-16709458041236-1920.jpg",
+    price: "73",
+    discount: "25",
+    link: "",
+    sold: "61",
+  },
+  {
+    image:
+      "https://staticg.sportskeeda.com/editor/2022/12/afd6e-16709458041236-1920.jpg",
+    price: "254",
+    discount: "36",
+    link: "",
+    sold: "12",
+  },
+  {
+    image:
+      "https://staticg.sportskeeda.com/editor/2022/12/afd6e-16709458041236-1920.jpg",
+    price: "1687",
+    discount: "20",
+    link: "",
+    sold: "96",
+  },
+  {
+    image:
+      "https://staticg.sportskeeda.com/editor/2022/12/afd6e-16709458041236-1920.jpg",
+    price: "126",
+    discount: "8",
+    link: "",
+    sold: "12",
+  },
+  {
+    image:
+      "https://staticg.sportskeeda.com/editor/2022/12/afd6e-16709458041236-1920.jpg",
+    price: "65",
+    discount: "7",
+    link: "",
+    sold: "82",
+  },
+  {
+    image:
+      "https://staticg.sportskeeda.com/editor/2022/12/afd6e-16709458041236-1920.jpg",
+    price: "41",
+    discount: "9",
+    link: "",
+    sold: "52",
+  },
+  {
+    image:
+      "https://staticg.sportskeeda.com/editor/2022/12/afd6e-16709458041236-1920.jpg",
+    price: "288",
+    discount: "35",
+    link: "",
+    sold: "49",
+  },
+];

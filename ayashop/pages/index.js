@@ -6,6 +6,7 @@ import axios from "axios";
 import { useSession, signIn, signOut } from "next-auth/react";
 import DotLoaderSpinner from "../components/loaders/dotLoader";
 import Main from "../components/home/main";
+import FlashDeadls from "../components/home/flashDeals";
 
 export default function Home({ country }) {
   const { data: session } = useSession();
@@ -17,6 +18,7 @@ export default function Home({ country }) {
       <div className="container">
         <div className="row">
           <Main />
+          <FlashDeadls />
         </div>
       </div>
       <Footer country={country} />
