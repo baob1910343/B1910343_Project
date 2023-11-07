@@ -2,6 +2,7 @@ import MainSwiper from "./swiper";
 import Offers from "./offer";
 import Menu from "./Menu";
 import User from "./User";
+import Header from "./Header";
 
 export default function Main() {
   return (
@@ -14,7 +15,9 @@ export default function Main() {
         </div>
         <div className="col-md-10   ">
           <div className="row ">
-            <div className="rounded shadow-sm ">header</div>
+            <div className="rounded shadow-sm ">
+              <Header />
+            </div>
           </div>
           <div className="row">
             <div className="col-md-9 mt-2">
