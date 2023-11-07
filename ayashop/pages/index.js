@@ -7,7 +7,8 @@ import { useSession, signIn, signOut } from "next-auth/react";
 import DotLoaderSpinner from "../components/loaders/dotLoader";
 import Main from "../components/home/main";
 import FlashDeadls from "../components/home/flashDeals";
-
+import Category from "../components/home/category";
+import { ayaka_cate } from "../data/home";
 export default function Home({ country }) {
   const { data: session } = useSession();
   console.log(session);
@@ -19,6 +20,24 @@ export default function Home({ country }) {
         <div className="row">
           <Main />
           <FlashDeadls />
+
+          <div className="row fs-4">
+            <div className="col-md-4">
+              <div className=" bg-danger rounded  ">
+                <Category header="ayaka" products={ayaka_cate} />
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className=" bg-danger rounded ">
+                <Category header="ayaka" products={ayaka_cate} />
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className=" bg-danger rounded ">
+                <Category header="ayaka" products={ayaka_cate} />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <Footer country={country} />

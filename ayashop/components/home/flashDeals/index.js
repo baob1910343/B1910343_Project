@@ -15,9 +15,12 @@ import { Navigation } from "swiper/modules";
 export default function FlashDeadls() {
   return (
     <div className="container mt-2">
-      <div className="row bg-warning rounded text-white ">
-        <div className="h1   mt-2">
-          FLASH SALE <ThunderboltOutlined /> <Countdown />
+      <div className="row bg-warning rounded text-white justify-content-between text-center">
+        <div className="h1 col mt-2">
+          FLASH SALE <ThunderboltOutlined />
+        </div>
+        <div className="col mt-2 ">
+          <Countdown date={new Date(2023, 11, 8)} />
         </div>
       </div>
       <Swiper

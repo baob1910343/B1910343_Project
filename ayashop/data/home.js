@@ -208,3 +208,35 @@ export const flashDealsArray = [
     sold: "49",
   },
 ];
+export const ayaka_cate = [
+  {
+    image:
+      "https://images-ng.pixai.art/images/orig/0d519d31-9ebd-409d-a535-8d379933deb5",
+    price: "79.58",
+  },
+  {
+    image:
+      "https://images-ng.pixai.art/images/orig/0d519d31-9ebd-409d-a535-8d379933deb5",
+    price: "",
+  },
+  {
+    image:
+      "https://images-ng.pixai.art/images/orig/0d519d31-9ebd-409d-a535-8d379933deb5",
+    price: "",
+  },
+  {
+    image:
+      "https://images-ng.pixai.art/images/orig/0d519d31-9ebd-409d-a535-8d379933deb5",
+    price: "",
+  },
+  {
+    image:
+      "https://images-ng.pixai.art/images/orig/0d519d31-9ebd-409d-a535-8d379933deb5",
+    price: "",
+  },
+  {
+    image:
+      "https://images-ng.pixai.art/images/orig/0d519d31-9ebd-409d-a535-8d379933deb5",
+    price: "",
+  },
+];
