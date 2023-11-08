@@ -9,6 +9,11 @@ import Main from "../components/home/main";
 import FlashDeadls from "../components/home/flashDeals";
 import Category from "../components/home/category";
 import { ayaka_cate } from "../data/home";
+import ProductsSwiper from "../components/productsSwiper";
+import { ayaka_swiper } from "../data/home";
+import { ayaka1_Swiper } from "../data/home";
+import { ayaka2_Swiper } from "../data/home";
+
 export default function Home({ country }) {
   const { data: session } = useSession();
   console.log(session);
@@ -37,6 +42,11 @@ export default function Home({ country }) {
                 <Category header="ayaka" products={ayaka_cate} />
               </div>
             </div>
+          </div>
+          <div className="row">
+            <ProductsSwiper header="ayaka" products={ayaka_swiper} />
+            <ProductsSwiper header="ayaka1" products={ayaka1_Swiper} />
+            <ProductsSwiper header="ayaka2" products={ayaka2_Swiper} />
           </div>
         </div>
       </div>

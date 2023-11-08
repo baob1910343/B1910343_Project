@@ -240,3 +240,147 @@ export const ayaka_cate = [
     price: "",
   },
 ];
+export const ayaka_swiper = [
+  {
+    name: "ayaka",
+    image:
+      "https://upload-os-bbs.hoyolab.com/upload/2022/06/29/175387813/0639a172b48284cd6c1b00f1ded909dd_7909083531377769486.jpg?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80",
+    price: "103",
+  },
+  {
+    name: "ayaka",
+    image:
+      "https://upload-os-bbs.hoyolab.com/upload/2022/06/29/175387813/0639a172b48284cd6c1b00f1ded909dd_7909083531377769486.jpg?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80",
+    price: "58",
+  },
+  {
+    name: "ayaka",
+    image:
+      "https://upload-os-bbs.hoyolab.com/upload/2022/06/29/175387813/0639a172b48284cd6c1b00f1ded909dd_7909083531377769486.jpg?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80",
+    price: "12.99",
+  },
+  {
+    name: "ayaka",
+    image:
+      "https://upload-os-bbs.hoyolab.com/upload/2022/06/29/175387813/0639a172b48284cd6c1b00f1ded909dd_7909083531377769486.jpg?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80",
+    price: "396",
+  },
+  {
+    name: "ayaka",
+    image:
+      "https://upload-os-bbs.hoyolab.com/upload/2022/06/29/175387813/0639a172b48284cd6c1b00f1ded909dd_7909083531377769486.jpg?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80",
+    price: "5.31",
+  },
+  {
+    name: "ayaka",
+    image:
+      "https://upload-os-bbs.hoyolab.com/upload/2022/06/29/175387813/0639a172b48284cd6c1b00f1ded909dd_7909083531377769486.jpg?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80",
+    price: "79.25",
+  },
+  {
+    name: "ayaka",
+    image:
+      "https://upload-os-bbs.hoyolab.com/upload/2022/06/29/175387813/0639a172b48284cd6c1b00f1ded909dd_7909083531377769486.jpg?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80",
+    price: "3.69",
+  },
+  {
+    name: "ayaka",
+    image:
+      "https://upload-os-bbs.hoyolab.com/upload/2022/06/29/175387813/0639a172b48284cd6c1b00f1ded909dd_7909083531377769486.jpg?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80",
+    price: "12.5",
+  },
+  {
+    name: "ayaka",
+    image:
+      "https://upload-os-bbs.hoyolab.com/upload/2022/06/29/175387813/0639a172b48284cd6c1b00f1ded909dd_7909083531377769486.jpg?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80",
+    price: "11.58",
+  },
+];
+export const ayaka1_Swiper = [
+  {
+    name: "",
+    image:
+      "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/l/8/d/medium-popoint13566-anime-girls-kamisato-ayaka-genshin-impact-hd-original-imagksqjrwk8kacu.jpeg?q=90",
+    price: "",
+  },
+  {
+    name: "",
+    image:
+      "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/l/8/d/medium-popoint13566-anime-girls-kamisato-ayaka-genshin-impact-hd-original-imagksqjrwk8kacu.jpeg?q=90",
+    price: "",
+  },
+  {
+    name: "",
+    image:
+      "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/l/8/d/medium-popoint13566-anime-girls-kamisato-ayaka-genshin-impact-hd-original-imagksqjrwk8kacu.jpeg?q=90",
+    price: "",
+  },
+  {
+    name: "",
+    image:
+      "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/l/8/d/medium-popoint13566-anime-girls-kamisato-ayaka-genshin-impact-hd-original-imagksqjrwk8kacu.jpeg?q=90",
+    price: "",
+  },
+  {
+    name: "",
+    image:
+      "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/l/8/d/medium-popoint13566-anime-girls-kamisato-ayaka-genshin-impact-hd-original-imagksqjrwk8kacu.jpeg?q=90",
+    price: "",
+  },
+  {
+    name: "",
+    image:
+      "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/l/8/d/medium-popoint13566-anime-girls-kamisato-ayaka-genshin-impact-hd-original-imagksqjrwk8kacu.jpeg?q=90",
+    price: "",
+  },
+  {
+    name: "",
+    image:
+      "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/l/8/d/medium-popoint13566-anime-girls-kamisato-ayaka-genshin-impact-hd-original-imagksqjrwk8kacu.jpeg?q=90",
+    price: "",
+  },
+  {
+    name: "",
+    image:
+      "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/l/8/d/medium-popoint13566-anime-girls-kamisato-ayaka-genshin-impact-hd-original-imagksqjrwk8kacu.jpeg?q=90",
+    price: "",
+  },
+];
+export const ayaka2_Swiper = [
+  {
+    name: "",
+    image:
+      "https://wallpapercrafter.com/desktop/324831-Video-Game-Genshin-Impact-Phone-Wallpaper.jpg",
+    price: "",
+  },
+  {
+    name: "",
+    image:
+      "https://wallpapercrafter.com/desktop/324831-Video-Game-Genshin-Impact-Phone-Wallpaper.jpg",
+    price: "",
+  },
+  {
+    name: "",
+    image:
+      "https://wallpapercrafter.com/desktop/324831-Video-Game-Genshin-Impact-Phone-Wallpaper.jpg",
+    price: "",
+  },
+  {
+    name: "",
+    image:
+      "https://wallpapercrafter.com/desktop/324831-Video-Game-Genshin-Impact-Phone-Wallpaper.jpg",
+    price: "",
+  },
+  {
+    name: "",
+    image:
+      "https://wallpapercrafter.com/desktop/324831-Video-Game-Genshin-Impact-Phone-Wallpaper.jpg",
+    price: "",
+  },
+  {
+    name: "",
+    image:
+      "https://wallpapercrafter.com/desktop/324831-Video-Game-Genshin-Impact-Phone-Wallpaper.jpg",
+    price: "",
+  },
+];
