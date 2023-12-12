@@ -13,10 +13,12 @@ import ProductsSwiper from "../components/productsSwiper";
 import { ayaka_swiper } from "../data/home";
 import { ayaka1_Swiper } from "../data/home";
 import { ayaka2_Swiper } from "../data/home";
-
-export default function Home({ country }) {
+import db from "../utils/db";
+import Product from "../models/Product";
+import ProductCard from "../components/productCard";
+export default function Home({ country, products }) {
   const { data: session } = useSession();
-  console.log(session);
+  // console.log(session);
   // {loading && <DotLoaderSpinner loading={loading} />}
   return (
     <div className="container">
@@ -48,6 +50,11 @@ export default function Home({ country }) {
             <ProductsSwiper header="ayaka1" products={ayaka1_Swiper} />
             <ProductsSwiper header="ayaka2" products={ayaka2_Swiper} />
           </div>
+          <div className="row">
+            {products.map((product) => (
+              <ProductCard product={product} key={product._id} />
+            ))}
+          </div>
         </div>
       </div>
       <Footer country={country} />
@@ -55,6 +62,9 @@ export default function Home({ country }) {
   );
 }
 export async function getServerSideProps() {
+  db.connectDb();
+  // sau khi ket noi csdl ta tao mang sp
+  let products = await Product.find().sort({ createdAt: -1 }).lean();
   let data = await axios
     .get("https://api.ipregistry.co/?key=uxh9lvu2fi1j5eao")
     .then((res) => {
@@ -65,6 +75,7 @@ export async function getServerSideProps() {
     });
   return {
     props: {
+      products: JSON.parse(JSON.stringify(products)), // chuyen sang jsoon phan tich dau cham
       // country: { name: data.name, flag: data.flag.emojitwo },
       country: {
         name: "Việt Nam",

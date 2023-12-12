@@ -300,49 +300,49 @@ export const ayaka1_Swiper = [
   {
     name: "",
     image:
-      "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/l/8/d/medium-popoint13566-anime-girls-kamisato-ayaka-genshin-impact-hd-original-imagksqjrwk8kacu.jpeg?q=90",
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ac03a17e-589d-4ac1-952a-4185d1070994/des0la6-2e96026e-6436-40fc-8835-5f52e1f0bd88.png/v1/fit/w_375,h_625/ayaka_render_by_minhchauk1k_des0la6-375w.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjAwMCIsInBhdGgiOiJcL2ZcL2FjMDNhMTdlLTU4OWQtNGFjMS05NTJhLTQxODVkMTA3MDk5NFwvZGVzMGxhNi0yZTk2MDI2ZS02NDM2LTQwZmMtODgzNS01ZjUyZTFmMGJkODgucG5nIiwid2lkdGgiOiI8PTEyMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.E4w7-OrU0XVIAg8WzzU2jSvzwcsN8O3918wsXExKGeI",
     price: "",
   },
   {
     name: "",
     image:
-      "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/l/8/d/medium-popoint13566-anime-girls-kamisato-ayaka-genshin-impact-hd-original-imagksqjrwk8kacu.jpeg?q=90",
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ac03a17e-589d-4ac1-952a-4185d1070994/des0la6-2e96026e-6436-40fc-8835-5f52e1f0bd88.png/v1/fit/w_375,h_625/ayaka_render_by_minhchauk1k_des0la6-375w.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjAwMCIsInBhdGgiOiJcL2ZcL2FjMDNhMTdlLTU4OWQtNGFjMS05NTJhLTQxODVkMTA3MDk5NFwvZGVzMGxhNi0yZTk2MDI2ZS02NDM2LTQwZmMtODgzNS01ZjUyZTFmMGJkODgucG5nIiwid2lkdGgiOiI8PTEyMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.E4w7-OrU0XVIAg8WzzU2jSvzwcsN8O3918wsXExKGeI",
     price: "",
   },
   {
     name: "",
     image:
-      "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/l/8/d/medium-popoint13566-anime-girls-kamisato-ayaka-genshin-impact-hd-original-imagksqjrwk8kacu.jpeg?q=90",
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ac03a17e-589d-4ac1-952a-4185d1070994/des0la6-2e96026e-6436-40fc-8835-5f52e1f0bd88.png/v1/fit/w_375,h_625/ayaka_render_by_minhchauk1k_des0la6-375w.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjAwMCIsInBhdGgiOiJcL2ZcL2FjMDNhMTdlLTU4OWQtNGFjMS05NTJhLTQxODVkMTA3MDk5NFwvZGVzMGxhNi0yZTk2MDI2ZS02NDM2LTQwZmMtODgzNS01ZjUyZTFmMGJkODgucG5nIiwid2lkdGgiOiI8PTEyMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.E4w7-OrU0XVIAg8WzzU2jSvzwcsN8O3918wsXExKGeI",
     price: "",
   },
   {
     name: "",
     image:
-      "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/l/8/d/medium-popoint13566-anime-girls-kamisato-ayaka-genshin-impact-hd-original-imagksqjrwk8kacu.jpeg?q=90",
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ac03a17e-589d-4ac1-952a-4185d1070994/des0la6-2e96026e-6436-40fc-8835-5f52e1f0bd88.png/v1/fit/w_375,h_625/ayaka_render_by_minhchauk1k_des0la6-375w.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjAwMCIsInBhdGgiOiJcL2ZcL2FjMDNhMTdlLTU4OWQtNGFjMS05NTJhLTQxODVkMTA3MDk5NFwvZGVzMGxhNi0yZTk2MDI2ZS02NDM2LTQwZmMtODgzNS01ZjUyZTFmMGJkODgucG5nIiwid2lkdGgiOiI8PTEyMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.E4w7-OrU0XVIAg8WzzU2jSvzwcsN8O3918wsXExKGeI",
     price: "",
   },
   {
     name: "",
     image:
-      "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/l/8/d/medium-popoint13566-anime-girls-kamisato-ayaka-genshin-impact-hd-original-imagksqjrwk8kacu.jpeg?q=90",
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ac03a17e-589d-4ac1-952a-4185d1070994/des0la6-2e96026e-6436-40fc-8835-5f52e1f0bd88.png/v1/fit/w_375,h_625/ayaka_render_by_minhchauk1k_des0la6-375w.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjAwMCIsInBhdGgiOiJcL2ZcL2FjMDNhMTdlLTU4OWQtNGFjMS05NTJhLTQxODVkMTA3MDk5NFwvZGVzMGxhNi0yZTk2MDI2ZS02NDM2LTQwZmMtODgzNS01ZjUyZTFmMGJkODgucG5nIiwid2lkdGgiOiI8PTEyMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.E4w7-OrU0XVIAg8WzzU2jSvzwcsN8O3918wsXExKGeI",
     price: "",
   },
   {
     name: "",
     image:
-      "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/l/8/d/medium-popoint13566-anime-girls-kamisato-ayaka-genshin-impact-hd-original-imagksqjrwk8kacu.jpeg?q=90",
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ac03a17e-589d-4ac1-952a-4185d1070994/des0la6-2e96026e-6436-40fc-8835-5f52e1f0bd88.png/v1/fit/w_375,h_625/ayaka_render_by_minhchauk1k_des0la6-375w.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjAwMCIsInBhdGgiOiJcL2ZcL2FjMDNhMTdlLTU4OWQtNGFjMS05NTJhLTQxODVkMTA3MDk5NFwvZGVzMGxhNi0yZTk2MDI2ZS02NDM2LTQwZmMtODgzNS01ZjUyZTFmMGJkODgucG5nIiwid2lkdGgiOiI8PTEyMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.E4w7-OrU0XVIAg8WzzU2jSvzwcsN8O3918wsXExKGeI",
     price: "",
   },
   {
     name: "",
     image:
-      "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/l/8/d/medium-popoint13566-anime-girls-kamisato-ayaka-genshin-impact-hd-original-imagksqjrwk8kacu.jpeg?q=90",
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ac03a17e-589d-4ac1-952a-4185d1070994/des0la6-2e96026e-6436-40fc-8835-5f52e1f0bd88.png/v1/fit/w_375,h_625/ayaka_render_by_minhchauk1k_des0la6-375w.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjAwMCIsInBhdGgiOiJcL2ZcL2FjMDNhMTdlLTU4OWQtNGFjMS05NTJhLTQxODVkMTA3MDk5NFwvZGVzMGxhNi0yZTk2MDI2ZS02NDM2LTQwZmMtODgzNS01ZjUyZTFmMGJkODgucG5nIiwid2lkdGgiOiI8PTEyMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.E4w7-OrU0XVIAg8WzzU2jSvzwcsN8O3918wsXExKGeI",
     price: "",
   },
   {
     name: "",
     image:
-      "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/l/8/d/medium-popoint13566-anime-girls-kamisato-ayaka-genshin-impact-hd-original-imagksqjrwk8kacu.jpeg?q=90",
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ac03a17e-589d-4ac1-952a-4185d1070994/des0la6-2e96026e-6436-40fc-8835-5f52e1f0bd88.png/v1/fit/w_375,h_625/ayaka_render_by_minhchauk1k_des0la6-375w.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjAwMCIsInBhdGgiOiJcL2ZcL2FjMDNhMTdlLTU4OWQtNGFjMS05NTJhLTQxODVkMTA3MDk5NFwvZGVzMGxhNi0yZTk2MDI2ZS02NDM2LTQwZmMtODgzNS01ZjUyZTFmMGJkODgucG5nIiwid2lkdGgiOiI8PTEyMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.E4w7-OrU0XVIAg8WzzU2jSvzwcsN8O3918wsXExKGeI",
     price: "",
   },
 ];

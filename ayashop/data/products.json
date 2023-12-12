@@ -1,0 +1,219 @@
+[
+  {
+    "_id": {
+      "$oid": "62c4711c062128444ad591a1"
+    },
+    "name": "Pleco L144",
+    "description": " là một loài cá dọn tảo tuyệt đẹp với dải màu cam và đen đặc biệt quý hiếm, được rất nhiều người chơi cá quan tâm trong thời gian gần đây. Điều này chắc chắn là do màu sắc rất nổi bật của loài cá này.",
+    "brand": "nhập khẩu",
+    "slug": "Pleco-L144",
+    "category": {
+      "$oid": "62c46ff0062128444ad59193"
+    },
+    "subCategories": [
+      {
+        "$oid": "62c46ffd062128444ad59199"
+      }
+    ],
+    "details": [
+      {
+        "name": "pleco longfin 24k",
+        "value": "màu vàng",
+        "_id": {
+          "$oid": "62c4711c062128444ad591a2"
+        }
+      },
+      {
+        "name": "pleco shortfin 24k",
+        "value": "màu vàng",
+        "_id": {
+          "$oid": "62c4711c062128444ad591ae"
+        }
+      }
+    ],
+    "questions": [],
+    "subProducts": [
+      {
+        "sku": "sw2206138988536738",
+        "discount": 0,
+        "images": [
+          {
+            "url": "https://bizweb.dktcdn.net/thumb/1024x1024/100/344/954/products/l144a-longfin-blue-eye-lemon-bristlenose-pleco-2.jpg?v=1680092599093",
+            "public_url": "https://bizweb.dktcdn.net/thumb/1024x1024/100/344/954/products/l144a-longfin-blue-eye-lemon-bristlenose-pleco-2.jpg?v=1680092599093"
+          },
+          {
+            "url": "//bizweb.dktcdn.net/thumb/1024x1024/100/344/954/products/ca-shortfin-vang-01.png?v=1648002646807",
+            "public_url": "//bizweb.dktcdn.net/thumb/1024x1024/100/344/954/products/ca-shortfin-vang-01.png?v=1648002646807"
+          }
+        ],
+        "description_images": [],
+        "color": {
+          "color": "#ecd297",
+          "image": "https://res.cloudinary.com/dmhcnhtng/image/upload/v1657041179/products/ac3homl0yeimydql5rq4.webp"
+        },
+        "sizes": [
+          {
+            "size": "S",
+            "qty": 15,
+            "price": 17,
+            "_id": {
+              "$oid": "62c4711c062128444ad591b0"
+            }
+          },
+          {
+            "size": "M",
+            "qty": 1414,
+            "price": 19,
+            "_id": {
+              "$oid": "62c4711c062128444ad591b1"
+            }
+          },
+          {
+            "size": "L",
+            "qty": 0,
+            "price": 21,
+            "_id": {
+              "$oid": "62c4711c062128444ad591b2"
+            }
+          },
+          {
+            "size": "XL",
+            "qty": 1423,
+            "price": 28,
+            "_id": {
+              "$oid": "62c4711c062128444ad591b3"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "62c4711c062128444ad591af"
+        }
+      },
+      {
+        "sku": "sw2206138988536738",
+        "discount": 0,
+        "images": [
+          {
+            "url": "https://bizweb.dktcdn.net/thumb/1024x1024/100/344/954/products/l144a-longfin-blue-eye-lemon-bristlenose-pleco-2.jpg?v=1680092599093",
+            "public_url": "https://bizweb.dktcdn.net/thumb/1024x1024/100/344/954/products/l144a-longfin-blue-eye-lemon-bristlenose-pleco-2.jpg?v=1680092599093"
+          },
+          {
+            "url": "//bizweb.dktcdn.net/thumb/1024x1024/100/344/954/products/ca-shortfin-vang-01.png?v=1648002646807",
+            "public_url": "//bizweb.dktcdn.net/thumb/1024x1024/100/344/954/products/ca-shortfin-vang-01.png?v=1648002646807"
+          }
+        ],
+        "description_images": [],
+        "color": {
+          "color": "#ecd297",
+          "image": "https://res.cloudinary.com/dmhcnhtng/image/upload/v1657041179/products/ac3homl0yeimydql5rq4.webp"
+        },
+        "sizes": [
+          {
+            "size": "S",
+            "qty": 15,
+            "price": 17,
+            "_id": {
+              "$oid": "62c4711c062128444ad591b0"
+            }
+          },
+          {
+            "size": "M",
+            "qty": 1414,
+            "price": 19,
+            "_id": {
+              "$oid": "62c4711c062128444ad591b1"
+            }
+          },
+          {
+            "size": "L",
+            "qty": 0,
+            "price": 21,
+            "_id": {
+              "$oid": "62c4711c062128444ad591b2"
+            }
+          },
+          {
+            "size": "XL",
+            "qty": 1423,
+            "price": 28,
+            "_id": {
+              "$oid": "62c4711c062128444ad591b3"
+            }
+          }
+        ],
+        "_id": {
+          "$oid": "62c4711c062128444ad591af"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2023-11-05T17:13:00.324Z"
+    },
+    "updatedAt": {
+      "$date": "2022-11-09T09:44:46.823Z"
+    },
+    "__v": 17,
+    "numReviews": 5,
+    "rating": 3.5,
+    "refundPolicy": "30 days",
+    "reviews": [
+      {
+        "reviewBy": {
+          "$oid": "62b33178fbcc6f0282db0606"
+        },
+        "rating": 1,
+        "review": "aaaaaaaaaaaaaaa",
+        "size": "S",
+        "style": {
+          "color": "#dac4ac",
+          "image": "https://bizweb.dktcdn.net/thumb/1024x1024/100/344/954/products/l144a-longfin-blue-eye-lemon-bristlenose-pleco-2.jpg?v=1680092599093"
+        },
+        "fit": "Small",
+        "images": [
+          {
+            "url": "https://bizweb.dktcdn.net/thumb/1024x1024/100/344/954/products/l144a-longfin-blue-eye-lemon-bristlenose-pleco-2.jpg?v=1680092599093",
+            "public_url": "https://bizweb.dktcdn.net/thumb/1024x1024/100/344/954/products/l144a-longfin-blue-eye-lemon-bristlenose-pleco-2.jpg?v=1680092599093"
+          }
+        ],
+        "_id": {
+          "$oid": "62c6089247a21fb57bb8b234"
+        },
+        "createdAt": {
+          "$date": "2023-11-06T22:11:30.149Z"
+        },
+        "updatedAt": {
+          "$date": "2022-11-09T09:44:46.559Z"
+        }
+      },
+      {
+        "reviewBy": {
+          "$oid": "62b33178fbcc6f0282db0606"
+        },
+        "rating": 1,
+        "review": "bbbb",
+        "size": "S",
+        "style": {
+          "color": "#dac4ac",
+          "image": "//bizweb.dktcdn.net/thumb/1024x1024/100/344/954/products/ca-shortfin-vang-01.png?v=1648002646807"
+        },
+        "fit": "Small",
+        "images": [
+          {
+            "url": "//bizweb.dktcdn.net/thumb/1024x1024/100/344/954/products/ca-shortfin-vang-01.png?v=1648002646807",
+            "public_url": "//bizweb.dktcdn.net/thumb/1024x1024/100/344/954/products/ca-shortfin-vang-01.png?v=1648002646807"
+          }
+        ],
+        "_id": {
+          "$oid": "62c6089247a21fb57bb8b234"
+        },
+        "createdAt": {
+          "$date": "2023-11-06T22:11:30.149Z"
+        },
+        "updatedAt": {
+          "$date": "2022-11-09T09:44:46.559Z"
+        }
+      }
+    ],
+    "shipping": "2"
+  }
+]
