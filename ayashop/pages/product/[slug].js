@@ -6,9 +6,11 @@ import Footer from "../../components/footer";
 import Category from "../../models/Category";
 import SubCategory from "../../models/SubCategory";
 import User from "../../models/User";
+import MainSwiper from "../../components/productPage/mainSwiper";
+import { useState } from "react";
 
 export default function product({ product }) {
-  console.log(product);
+  const [activeImg, setActiveImg] = useState("");
   return (
     <div>
       <Head>
@@ -16,7 +18,7 @@ export default function product({ product }) {
       </Head>
       <Header country="" />
       <div className="container">
-        <div className="row">
+        <div className="row mt-2">
           Home /
           {product.category
             ? product.category.name
@@ -24,6 +26,9 @@ export default function product({ product }) {
           {product.subCategories.map((sub) => (
             <span>/{sub.name}</span>
           ))}
+        </div>
+        <div>
+          <MainSwiper images={product.images} activeImg={activeImg} />
         </div>
       </div>
     </div>
