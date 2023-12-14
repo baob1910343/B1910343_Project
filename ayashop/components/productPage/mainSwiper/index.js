@@ -6,7 +6,7 @@ export default function MainSwiper({ images, activeImg }) {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-5">
+        <div className="">
           <div className={styles.swiper}>
             <div className={styles.swiper__active}>
               <ReactImageMagnify

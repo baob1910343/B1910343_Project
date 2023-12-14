@@ -8,6 +8,7 @@ import SubCategory from "../../models/SubCategory";
 import User from "../../models/User";
 import MainSwiper from "../../components/productPage/mainSwiper";
 import { useState } from "react";
+import Infos from "../../components/productPage/infos";
 
 export default function product({ product }) {
   const [activeImg, setActiveImg] = useState("");
@@ -27,8 +28,17 @@ export default function product({ product }) {
             <span>/{sub.name}</span>
           ))}
         </div>
-        <div>
-          <MainSwiper images={product.images} activeImg={activeImg} />
+        <div className="row">
+          <div className="col-md-5 ">
+            <MainSwiper
+              images={product.images}
+              activeImg={activeImg}
+              className=""
+            />
+          </div>
+          <div className="col-md ">
+            <Infos product={product} setActiveImg={setActiveImg} />
+          </div>
         </div>
       </div>
     </div>
@@ -78,7 +88,6 @@ export async function getServerSideProps(context) {
     priceBefore: subProduct.sizes[size].price,
     quantity: subProduct.sizes[size].qty,
   };
-  console.log("new product", newProduct);
 
   return {
     props: {
