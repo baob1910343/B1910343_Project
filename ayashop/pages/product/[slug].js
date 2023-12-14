@@ -72,10 +72,12 @@ export async function getServerSideProps(context) {
     colors: product.subProducts.map((p) => {
       return p.color;
     }),
-    priceRange:
-      prices.length > 1
-        ? `From ${prices[0]} to ${prices[prices.length - 1]} vnd`
-        : "",
+    priceRange: subProduct.discount
+      ? ` ${(prices[0] - prices[0] / subProduct.discount).toFixed(2)}vnd đến ${(
+          prices[prices.length - 1] -
+          prices[prices.length - 1] / subProduct.discount
+        ).toFixed(2)}vnd`
+      : ` ${prices[0]}vnd đến ${prices[prices.length - 1]}vnd`,
     //neu ko co giam gia thi se di den cac sp phu
     price:
       subProduct.discount > 0
