@@ -1,12 +1,13 @@
 import styles from "./styles.module.scss";
-
+import { TbPlus, TbMinus } from "react-icons/tb";
 import { Rating } from "@mui/material";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import Link from "next/Link";
-export default function Infos({ product }) {
+export default function Infos({ product, setActiveImg }) {
   const router = useRouter();
   const [size, setSize] = useState(router.query.size);
+  const [qty, setQty] = useState(1); // so luong
   return (
     <div className="container">
       <div className="h1">{product.name}</div>
@@ -22,7 +23,7 @@ export default function Infos({ product }) {
         ({product.numReviews}
         {product.numReviews == 1 ? " review" : " Đánh giá"})
       </div>
-      <div>
+      <div className={styles.infos_price}>
         {!size ? <h2>{product.priceRange}</h2> : <h1>{product.price}</h1>}
 
         {product.discount > 0 ? (
@@ -41,7 +42,7 @@ export default function Infos({ product }) {
       </div>
 
       <div>
-        {!size
+        {size
           ? product.quantity
           : product.sizes.reduce((start, next) => start + next.qty, 0)}{" "}
         Hàng có sẵn.
@@ -67,6 +68,39 @@ export default function Infos({ product }) {
                 </Link>
               </div>
             ))}
+          </div>
+          <div className={styles.infos__colors}>
+            {product.colors &&
+              product.colors.map((color, i) => (
+                <span
+                  className={i == router.query.style ? styles.active_color : ""}
+                  onMouseOver={() =>
+                    setActiveImg(product.subProducts[i].images[0].url)
+                  }
+                  onMouseLeave={() => setActiveImg("")}
+                >
+                  <Link href={`/product/${product.slug}?style=${i}`}>
+                    <img src={color.image} alt="" />
+                  </Link>
+                </span>
+              ))}
+          </div>
+          <div className={styles.infos__qty}>
+            <button
+              onClick={() => qty > 1 && setQty((prev) => prev - 1)}
+              className="rounded"
+            >
+              <TbMinus />
+            </button>
+            <span>{qty}</span>
+            <button
+              onClick={() =>
+                qty < product.quantity && setQty((prev) => prev + 1)
+              }
+              className="rounded"
+            >
+              <TbPlus />
+            </button>
           </div>
         </div>
       </div>

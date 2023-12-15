@@ -103,7 +103,7 @@
     button {
       width: 30px;
       height: 30px;
-      border-radius: 50%;
+
       display: grid;
       place-items: center;
       cursor: pointer;
@@ -142,9 +142,9 @@
       &:first-of-type {
         background-image: linear-gradient(
           to top,
-          #f3e7e9 0%,
-          #e3eeff 99%,
-          #e3eeff 100%
+          #37f143 0%,
+          #527b3a 99%,
+          #0f5211 100%
         );
       }
       &:last-of-type {
