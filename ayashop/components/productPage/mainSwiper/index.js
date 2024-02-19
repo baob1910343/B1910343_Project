@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 export default function MainSwiper({ images, activeImg }) {
   const [active, setActive] = useState(0);
   return (
-    <div className="container">
+    <div className="container ">
       <div className="row">
         <div className="">
           <div className={styles.swiper}>

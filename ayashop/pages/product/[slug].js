@@ -9,17 +9,18 @@ import User from "../../models/User";
 import MainSwiper from "../../components/productPage/mainSwiper";
 import { useState } from "react";
 import Infos from "../../components/productPage/infos";
+import Reviews from "../../components/productPage/reviews";
 
 export default function product({ product }) {
   const [activeImg, setActiveImg] = useState("");
   return (
-    <div>
+    <div className="mb-5">
       <Head>
         <title>{product.name}</title>
       </Head>
       <Header country="" />
-      <div className="container">
-        <div className="row mt-2">
+      <div className="container ">
+        <div className="row m-2 ">
           Home /
           {product.category
             ? product.category.name
@@ -28,18 +29,26 @@ export default function product({ product }) {
             <span>/{sub.name}</span>
           ))}
         </div>
-        <div className="row">
-          <div className="col-md-5 ">
-            <MainSwiper
-              images={product.images}
-              activeImg={activeImg}
-              className=""
-            />
+        <div className="row mt-2 ">
+          <div className="col-md-5 mt-2 ">
+            <div>
+              <MainSwiper
+                images={product.images}
+                activeImg={activeImg}
+                className=""
+              />
+            </div>
+            <div className="row">
+              <Reviews product={product} />
+            </div>
           </div>
-          <div className="col-md ">
+          <div className="col-md-7">
             <Infos product={product} setActiveImg={setActiveImg} />
           </div>
         </div>
+      </div>
+      <div className="container">
+        <div className="row"></div>
       </div>
     </div>
   );
@@ -89,6 +98,35 @@ export async function getServerSideProps(context) {
 
     priceBefore: subProduct.sizes[size].price,
     quantity: subProduct.sizes[size].qty,
+    ratings: [
+      {
+        percentage: "",
+      },
+      {
+        percentage: "",
+      },
+      {
+        percentage: "",
+      },
+      {
+        percentage: "",
+      },
+      {
+        percentage: "",
+      },
+    ],
+    allSizes: product.subProducts
+      .map((p) => {
+        return p.sizes;
+      })
+      .flat()
+      .sort((a, b) => {
+        return a.size - b.size;
+      })
+      .filter(
+        (element, index, array) =>
+          array.findIndex((el2) => el2.size === element.size) === index
+      ),
   };
 
   return {

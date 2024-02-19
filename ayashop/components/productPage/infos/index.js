@@ -4,13 +4,18 @@ import { Rating } from "@mui/material";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import Link from "next/Link";
+import { BsHandbagFill, BsHeart } from "react-icons/bs";
+import Share from "./share";
+import Accordian from "./Accordian";
+import SimillarSwiper from "./SimillarSwiper";
 export default function Infos({ product, setActiveImg }) {
   const router = useRouter();
   const [size, setSize] = useState(router.query.size);
   const [qty, setQty] = useState(1); // so luong
+
   return (
     <div className="container">
-      <div className="h1">{product.name}</div>
+      <div className="h1 ">{product.name}</div>
       <div className="h2">{product.sku}</div>
       <div>
         <Rating
@@ -18,7 +23,7 @@ export default function Infos({ product, setActiveImg }) {
           defaultValue={product.rating}
           precision={0.5}
           readOnly
-          style={{ color: "#FACF19" }}
+          className="text-warning"
         />
         ({product.numReviews}
         {product.numReviews == 1 ? " review" : " Đánh giá"})
@@ -84,23 +89,55 @@ export default function Infos({ product, setActiveImg }) {
                   </Link>
                 </span>
               ))}
+          </div>{" "}
+          <div className="m-1">
+            <div className={styles.infos__qty}>
+              <button
+                onClick={() => qty > 1 && setQty((prev) => prev - 1)}
+                className="rounded"
+              >
+                <TbMinus />
+              </button>
+              <span>{qty}</span>
+              <button
+                onClick={() =>
+                  qty < product.quantity && setQty((prev) => prev + 1)
+                }
+                className="rounded"
+              >
+                <TbPlus />
+              </button>
+            </div>
           </div>
-          <div className={styles.infos__qty}>
-            <button
-              onClick={() => qty > 1 && setQty((prev) => prev - 1)}
-              className="rounded"
-            >
-              <TbMinus />
-            </button>
-            <span>{qty}</span>
-            <button
-              onClick={() =>
-                qty < product.quantity && setQty((prev) => prev + 1)
-              }
-              className="rounded"
-            >
-              <TbPlus />
-            </button>
+          <div className="m-1">
+            <div className={styles.infos__actions}>
+              <button
+                disabled={product.quantity < 1}
+                style={{
+                  cursor: `${
+                    product.quantity < 1
+                      ? "không được phép vui lòng thử lại"
+                      : ""
+                  }`,
+                }}
+                onClick={() => addToCartHandler()}
+              >
+                <BsHandbagFill />
+                <b>THÊM VÀO GIỎ HÀNG</b>
+              </button>
+              <button onClick={() => handleWishlist()}>
+                <BsHeart />
+                WISHLIST
+              </button>
+            </div>
+          </div>
+          <div>
+            <Share />
+            <Accordian details={[product.desription, ...product.details]} />
+          </div>
+          <div className="row mt-3 mb-3">
+            <h2> Sản phẩm tương tự</h2>
+            <SimillarSwiper />
           </div>
         </div>
       </div>

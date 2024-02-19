@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import { Navigation } from "swiper/modules";
 export default function ProductsSwiper({ header, products }) {
   return (
-    <div className="container mt-3">
+    <div className="container mt-3 ">
       <div className="row bg-warning rounded">
         {header && <div className="">{header}</div>}
       </div>
