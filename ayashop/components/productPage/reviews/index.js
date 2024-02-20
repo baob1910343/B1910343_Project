@@ -3,10 +3,11 @@ import styles from "./styles.module.scss";
 import { useSession, signIn } from "next-auth/react";
 import { useState } from "react";
 import AddReview from "./AddReview";
+import Table from "./Table";
 export default function Reviews({ product }) {
   const { data: session } = useSession();
   return (
-    <div>
+    <div className="">
       <div className="mt-5">
         <h1>Phản hồi khách hàng ({product.reviews.length})</h1>
       </div>
@@ -54,6 +55,7 @@ export default function Reviews({ product }) {
           Đăng nhập để thêm đánh giá
         </button>
       )}
+      <div className=""></div>
     </div>
   );
 }

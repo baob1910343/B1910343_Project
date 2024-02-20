@@ -14,7 +14,7 @@ export default function Infos({ product, setActiveImg }) {
   const [qty, setQty] = useState(1); // so luong
 
   return (
-    <div className="container">
+    <div className="container ">
       <div className="h1 ">{product.name}</div>
       <div className="h2">{product.sku}</div>
       <div>

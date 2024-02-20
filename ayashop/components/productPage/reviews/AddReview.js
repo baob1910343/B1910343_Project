@@ -1,11 +1,14 @@
 import { useState } from "react";
 import Select from "./Select";
 import { Rating } from "@mui/material";
+import Images from "./images";
+
 export default function AddReview({ product }) {
   const [size, setSize] = useState("");
   const [style, setStyle] = useState("");
   const [review, setReview] = useState("");
   const [rating, setRating] = useState();
+  const [images, setImages] = useState([]);
   return (
     <div className="row">
       <div className="col bg-light rounded border">
@@ -28,6 +31,7 @@ export default function AddReview({ product }) {
           </div>
         </div>
         <div className="col-md-12">
+          <Images images={images} setImages={setImages} />
           <textarea
             name="review"
             value={review}

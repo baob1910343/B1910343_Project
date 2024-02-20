@@ -10,9 +10,11 @@ import MainSwiper from "../../components/productPage/mainSwiper";
 import { useState } from "react";
 import Infos from "../../components/productPage/infos";
 import Reviews from "../../components/productPage/reviews";
+import Table from "../../components/productPage/reviews/Table";
 
 export default function product({ product }) {
   const [activeImg, setActiveImg] = useState("");
+  console.log("reviews", product.reviews);
   return (
     <div className="mb-5">
       <Head>
@@ -48,7 +50,16 @@ export default function product({ product }) {
         </div>
       </div>
       <div className="container">
-        <div className="row"></div>
+        <div className="row">
+          <div className="mt-2 ">
+            <Table
+              reviews={product.reviews}
+              allSizes={product.allSizes}
+              colors={product.colors}
+              className="bg-danger"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -64,7 +75,10 @@ export async function getServerSideProps(context) {
     .populate({ path: "subCategories", model: SubCategory })
     .populate({ path: "reviews.reviewBy", model: User })
     .lean();
+
   let subProduct = product.subProducts[style];
+  console.log("Product object:", product);
+  console.log("SubProduct object:", subProduct);
   let prices = subProduct.sizes
     .map((s) => {
       return s.price;
